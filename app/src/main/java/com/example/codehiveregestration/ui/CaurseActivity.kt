@@ -1,10 +1,12 @@
-package com.example.codehiveregestration
+package com.example.codehiveregestration.ui
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import android.widget.LinearLayout
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
+import com.example.codehiveregestration.Caurse
+import com.example.codehiveregestration.Causes_Adapter
+import com.example.codehiveregestration.R
 
 class caurseActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -16,7 +18,7 @@ class caurseActivity : AppCompatActivity() {
             Caurse("MB101","Introduction to Android", "Mobile Developers", "John Ownar")
         )
 
-        var Causes_Adapter =Causes_Adapter(courseList)
+        var Causes_Adapter = Causes_Adapter(courseList)
         rvCourses.layoutManager = LinearLayoutManager(baseContext)
         rvCourses.adapter=Causes_Adapter
     }
